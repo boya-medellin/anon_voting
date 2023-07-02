@@ -1,7 +1,6 @@
-<h2 align="center"> Anonymous Voting</h2>
+# Anonymous Voting 
 
-
-<h4 align="center"> Scope</h2>
+## Scope
 
 Alice, Bob, and Carol decided to use the above approach to implement anonymous voting.
 That is, they would like to vote on an issue, they would like to know the final result of the
@@ -20,7 +19,7 @@ a2 are known only to Alice.
 * 6. Carol computes C(3) and gives C(1) to Alice and C(2) to Bob.
 * 7. Alice computes D(1) = A(1) + B(1) + C(1).
 
-<h2 align="center"> Implementation</h2>
+## Implementation
   Each voter creates a polynomial with their binary vote as the last coefficient.
   Each voter corresponds to a number. They accept the value of each of the other voters' 
   polynomials for that number and sum them all up. The number and the sum of the polynomials
@@ -38,7 +37,7 @@ a2 are known only to Alice.
    FOR: 4
    AGAINST: 2
 
-<h2 align="center"> Why is d0 the sum of the votes?</h2>
+### Why is d0 the sum of the votes?
   Each value of D for value x is the sum of all the other polynomials for that same value x.
   Polynomial D is by definition the sum of the other polynomials by parts.
   Therefore we have:
