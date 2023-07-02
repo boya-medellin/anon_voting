@@ -1,7 +1,7 @@
-<h4 align="center"> Anonymous Voting</h4>
+<h2 align="center"> Anonymous Voting</h2>
 
 
-<h2 align="center"> Scope</h2>
+<h4 align="center"> Scope</h2>
 
 Alice, Bob, and Carol decided to use the above approach to implement anonymous voting.
 That is, they would like to vote on an issue, they would like to know the final result of the
