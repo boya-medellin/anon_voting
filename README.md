@@ -8,16 +8,15 @@ voting, but they do not want to reveal their individual votes. At the end they w
 sum of the votes but not the individual votes.
 They decided to proceed as follows:
 
-* 1. Alice creates the polynomial A(x) = a2*x^2 + a1*x + a0 where a0 is her vote (an a0
+ 1. Alice creates the polynomial A(x) = a2*x^2 + a1*x + a0 where a0 is her vote (an a0
 value equal to 1 means “yes” and equal to zero means “no”). The coefficients a1 and
 a2 are known only to Alice.
-
-* 2. Bob creates the polynomial  B(x ) = b2 x^2 + b1*x + b0 where b0 is his vote.
-* 3. Carol creates the polynomial C(x) =c2*x^2 + c1*x + c0 where c0 is her vote.
-* 4. Alice computes A(1) and gives A(2) to Bob and A(3) to Carol.
-* 5. Bob computes B(2) and gives B(1) to Alice and B(3) to Carol.
-* 6. Carol computes C(3) and gives C(1) to Alice and C(2) to Bob.
-* 7. Alice computes D(1) = A(1) + B(1) + C(1).
+ 2. Bob creates the polynomial  B(x ) = b2 x^2 + b1*x + b0 where b0 is his vote.
+ 3. Carol creates the polynomial C(x) =c2*x^2 + c1*x + c0 where c0 is her vote.
+ 4. Alice computes A(1) and gives A(2) to Bob and A(3) to Carol.
+ 5. Bob computes B(2) and gives B(1) to Alice and B(3) to Carol.
+ 6. Carol computes C(3) and gives C(1) to Alice and C(2) to Bob.
+ 7. Alice computes D(1) = A(1) + B(1) + C(1).
 
 ## Implementation
   Each voter creates a polynomial with their binary vote as the last coefficient.
